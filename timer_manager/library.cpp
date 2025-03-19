@@ -31,7 +31,7 @@
         es.add_event(2, "Update");
         es.add_event(10, "Restart");
 
-        //std::cout << "Processing events:\n";
+        
         while (!es.is_empty()) {
             std::string event = es.process_next();
             std::cout << event << "\n";
@@ -44,7 +44,7 @@
         es2.add_event(5, "Backup");
         es2.add_event(5, "Update");
 
-        //std::cout << "Processing events:\n";
+        
         while (!es2.is_empty()) {
             std::string event = es2.process_next();
             std::cout << event << "\n";
